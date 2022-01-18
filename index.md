@@ -1,12 +1,20 @@
-## Welcome to GitHub Pages
+## Data Science Project: Billboard Top 100
+```markdown
+First thing first is Imports. there are a lot, but I use most if not all of them throughout the code so it's justifiale.
+```
 
-You can use the [editor on GitHub](https://github.com/cybernator5000/Data_Science_Final/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+```markdown
+The first part of the project was of course, the Scraping and Crawling. By looking at our base URL (I opted for [https://www.billboard.com/charts/hot-100/2021-12-12/](url)
+we can see several things:
+1. The list is easily seperated into rows that are detectable via BeutifulSoup
+2. The parts that aren't just given as numbers are given as unique images, such as wether a song went up or down
+3. We can use the URL of the image to decipher whether or it went up, down, stayed the same or is new entirely
+4. The site is very friendly to crawling, as the date field is conveniant and forgiving (if you don't use the first day of a week given, it'll just display the results
+   for that week anyway)
+With that information, we can start a basic scraper and crawler
+```
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
@@ -25,13 +33,3 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cybernator5000/Data_Science_Final/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
